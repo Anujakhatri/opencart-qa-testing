@@ -1,0 +1,13 @@
+Test Case ID,Title,Preconditions,Steps,Expected Result,Actual Result,Status,Priority
+TC-001,Register with valid details,User is on registration page,"1. Fill all required fields with valid data. 2. Click Continue.",Account is created and user is logged in / confirmation shown,,Not run,High
+TC-002,Register with already-used email,An account with this email already exists,"1. Fill registration form using existing email. 2. Click Continue.",Error message shown; account not created,,Not run,High
+TC-003,Login with valid credentials,Registered account exists,"1. Go to login page. 2. Enter valid email and password. 3. Click Login.",User is logged in and redirected to account page,,Not run,High
+TC-004,Login with incorrect password,Registered account exists,"1. Enter valid email, incorrect password. 2. Click Login.",Error message shown; user not logged in,,Not run,High
+TC-005,Search for existing product,Store has products loaded,"1. Enter a known product name in search box. 2. Press Enter.",Matching product(s) displayed in results,,Not run,Medium
+TC-006,Search for non-existent product,None,"1. Enter a random/non-existent term. 2. Press Enter.","No results found"" message shown",,Not run,Medium
+TC-007,Add product to cart,Product page is open,"1. Select quantity. 2. Click Add to Cart.",Product appears in cart with correct quantity,,Not run,High
+TC-008,Remove product from cart,Cart has at least one item,"1. Go to cart. 2. Click Remove on an item.",Item is removed; cart total updates correctly,,Not run,High
+TC-009,Checkout as guest,Cart has items,"1. Proceed to checkout. 2. Select guest checkout. 3. Fill shipping/billing. 4. Confirm order.",Order is placed and confirmation is shown,,Not run,High
+TC-010,Checkout with empty cart,Cart is empty,1. Attempt to go to checkout directly.,User is blocked/redirected with an appropriate message,,Not run,Medium
+TC-011,Payment with valid test details,User is at payment step,"1. Enter valid test payment details. 2. Confirm.",Payment is accepted and order confirmed,,Not run,High
+TC-012,Payment with invalid card details,User is at payment step,"1. Enter invalid card number. 2. Confirm.",Error message shown; order not placed,,Not run,High
